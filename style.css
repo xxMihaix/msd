@@ -11,7 +11,7 @@
 html, body{ 
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
+    background-color: white;
     position: relative;
 }
 
@@ -486,7 +486,7 @@ html, body{
     color: black;
     font-weight: bold;
     font-size: 30px;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
     text-align: center;
 }
@@ -509,17 +509,6 @@ html, body{
 #section1{
     background-color: #dcdcdc;
     width: 100%;
-}
-
-@media(width > 2000px){
-    #center-all1{
-        background-color: transparent;
-
-    }
-    #section1{
-        max-width: 1200px;
-        border-radius: 15px;
-    }
 }
 
 .content{
@@ -803,8 +792,125 @@ html, body{
     cursor: pointer;
 }
 
+/*************** Donatii *****************/
+
+#donation-title{
+    margin-top: 10px;
+}
+
+#dono-section{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    height: auto;
+    padding: 0 20px;
+}
+
+.img-dono2-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-dono1{
+    height: 350px;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.img-dono2{
+    display: none;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-dono1 img{
+    height: 100%;
+    width: 100%;
+}
+
+.img-dono2 img{
+    width: 100%;
+}
+
+.text-dono{
+    height: 100%;
+    width: 50%;
+}
+
+.title-dono{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+@media(min-width: 480px){
+    .img-dono2 img{
+        width: 80%;
+    }
+}
+
+@media(max-width: 775px){
+    .title-dono{
+        font-size: 25px;
+    }
+    .img-dono1{
+        display: none;
+    }
+    .img-dono2{
+        display: flex;
+    }
+    #dono-section{
+        gap: 0px;
+        flex-direction: column;
+    }
+    .text-dono{
+        width: 100%;
+    }
+}
+
+.des-dono{
+    font-size: 18px;
+}
+
+.btn-dono-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    justify-content: center;
+    align-items: center;
+}
+
+.dono-btn{
+    background-color: #635bff;
+    transition: 0.25s ease;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 12px 0px;
+    margin: 5px;
+}
+
+  .dono-btn:hover {
+    background: #5146ff;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(99,91,255,0.35);
+  }
+
+.stripe{
+    bottom: 0px;
+}
 
 /*************** Contact *****************/
+
+#contact-title{
+    margin-top: 20px;
+}
 
 .asoc{
     font-weight: bold;
@@ -899,6 +1005,7 @@ textarea{
     border-radius: 15px;
     outline: none;
     height: 100px;
+    padding: 10px;
 }
 
 .align-submit{

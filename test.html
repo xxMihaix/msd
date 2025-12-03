@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section style="padding: 70px 20px; background: #f4f4ff; font-family: Arial, sans-serif;">
+  <div style="
+    max-width: 1100px; 
+    margin: auto; 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    gap: 40px;
+  ">
+    
+    <!-- IMAGINE -->
+    <div style="flex: 1; min-width: 300px;">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900" 
+           alt="Donation Image"
+           style="width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.12);">
+    </div>
+
+    <!-- TEXT + BUTOANE -->
+    <div style="flex: 1; min-width: 300px;">
+      <h2 style="font-size: 40px; font-weight: bold; color: #1a1a1a; margin-bottom: 15px;">
+        Ajută la construirea unui proiect mai bun
+      </h2>
+
+      <p style="font-size: 18px; color: #555; margin-bottom: 30px; line-height: 1.6;">
+        Susținerea ta face posibilă continuarea dezvoltării proiectului.  
+        Orice contribuție – mică sau mare – contează și este enorm apreciată! 🙏  
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px;">
+        
+        <a href="LINK_10" target="_blank" class="don-btn">10 lei</a>
+        <a href="LINK_25" target="_blank" class="don-btn">25 lei</a>
+        <a href="LINK_50" target="_blank" class="don-btn">50 lei</a>
+        <a href="LINK_75" target="_blank" class="don-btn">75 lei</a>
+        <a href="LINK_100" target="_blank" class="don-btn">100 lei</a>
+        <a href="LINK_200" target="_blank" class="don-btn">200 lei</a>
+        <a href="LINK_500" target="_blank" class="don-btn">500 lei</a>
+        <a href="LINK_1000" target="_blank" class="don-btn">1000 lei</a>
+
+      </div>
+
+      <p style="color: #999; margin-top: 20px; font-size: 14px;">
+        Plățile sunt procesate securizat prin Stripe.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- BUTTON STYLE -->
+<style>
+  .don-btn {
+    display: block;
+    padding: 14px 0;
+    background: #635bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    transition: 0.25s ease;
+    box-shadow: 0 6px 16px rgba(99,91,255,0.25);
+  }
+  .don-btn:hover {
+    background: #5146ff;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(99,91,255,0.35);
+  }
+</style>
+
+</body>
+</html>
