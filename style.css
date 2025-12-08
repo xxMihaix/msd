@@ -8,6 +8,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    /* sau cât are header-ul tău înălțime */
+}
+
 html, body{ 
     width: 100%;
     height: 100%;
@@ -646,6 +652,19 @@ html, body{
     width: 40px;
 }
 
+/************** Img *****************/
+
+.fade-container{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+}
+
+
+
+
+
 /************** Proiecte *****************/
 
 .project-container-all{
@@ -687,11 +706,11 @@ html, body{
     height: 150px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    overflow: hidden;
 }
 
 .img-back img{
     width: 100%;
-    height: 100%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -885,6 +904,10 @@ html, body{
     align-items: center;
 }
 
+.link{
+    text-decoration: none;
+}
+
 .dono-btn{
     background-color: #635bff;
     transition: 0.25s ease;
@@ -908,9 +931,6 @@ html, body{
 
 /*************** Contact *****************/
 
-#contact-title{
-    margin-top: 20px;
-}
 
 .asoc{
     font-weight: bold;
