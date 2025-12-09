@@ -63,7 +63,7 @@ document.querySelectorAll('.proiect-container').forEach((proiect) => {
     let expended = 0;
 
     // reset display
-    items.forEach(item => item.style.display = 'flex');
+    items.forEach(item => item.style.display = 'block');
 
     if(screenWidth < 500){
         showMore.style.display = 'block';
@@ -78,13 +78,13 @@ document.querySelectorAll('.proiect-container').forEach((proiect) => {
 
             if(expended === 1){
                 for(let i = items.length - 4; i < items.length - 2; i++){
-                    items[i].style.display = 'flex';
+                    items[i].style.display = 'block';
                     showMore.textContent = 'Arata mai multe';
                 }
             }
             else if(expended === 2){
                 for(let i = items.length - 4; i < items.length; i++){
-                    items[i].style.display = 'flex';
+                    items[i].style.display = 'block';
                     showMore.textContent = 'Arata mai putine';
                 }
             }
@@ -110,7 +110,7 @@ document.querySelectorAll('.proiect-container').forEach((proiect) => {
 
             if (expended === 1){
                 for (let i = items.length - 2; i < items.length; i++){
-                items[i].style.display = 'flex';
+                items[i].style.display = 'block';
                 showMore.textContent = 'Arata mai putine';
             }
             }

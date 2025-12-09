@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', function(){
         {id: 8, title: '📖 Biblii', des: 'Am distribuit peste 500 de Biblii persoanelor care aveau nevoie de lumină și îndrumare spirituală. Cu ajutorul lui Dumnezeu, am putut răspândi Cuvântul Său și amintirea faptului că El este speranța și tăria noastră în orice vreme.', image: 'images/proiecte/Biblii.png'},
         {id: 9, title: '🚲 Biciclete', des: 'Am adus bucurie copiilor care nu aveau una. Cu ajutorul lui Dumnezeu, am oferit biciclete care au devenit pentru acești copii un simbol al libertății și al copilăriei fericite.', image: 'images/proiecte/Biciclete.png'},
         {id: 10, title: '🏠 Casa', des: 'Unul dintre cele mai emoționante proiecte este „Casa”. Cu ajutorul lui Dumnezeu, am construit o locuință pentru o familie extrem de defavorizată. A fost o lucrare făcută din inimă, în care am văzut cum Dumnezeu lucrează prin oameni pentru a aduce speranță, siguranță și dragoste într-un cămin.', image: 'images/proiecte/Casa.png'},
-        {id: 11, title: '🥔 Cartofi', des: 'Continuăm să oferim sprijin alimentar familiilor nevoiașe, distribuind cartofi în comunitățile vulnerabile. Un gest simplu, dar plin de binecuvântare, care le ușurează viața celor aflați în lipsuri.', image: 'images/proiecte/Cartofi.png'},
-        {id: 12, title: '🏗️ Hala (în desfășurare)', des: ' Ne aflăm în plin proces de construcție a unei hale, care va deveni un centru pentru pregătirea și depozitarea pachetelor umanitare. Credem că această hală va fi o binecuvântare, un loc din care vor pleca multe fapte bune și speranță pentru oameni.', image: 'images/proiecte/Hala.png'},
-        {id: 13, title: '🔥 Fii și tu căldură în casa cuiva', des: 'Ne propunem să strângem fonduri pentru un camion de lemne, pentru a aduce căldură în casele și inimile persoanelor defavorizate. Prin acest proiect, dorim să fim mâinile prin care Dumnezeu lucrează și aduce lumină acolo unde e frig și întuneric.', image: 'images/proiecte/fii.png'},
+        {id: 11,  title: '🥔 Cartofi', des: 'Continuăm să oferim sprijin alimentar familiilor nevoiașe, distribuind cartofi în comunitățile vulnerabile. Un gest simplu, dar plin de binecuvântare, care le ușurează viața celor aflați în lipsuri.', image: 'images/proiecte/Cartofi.png'},
+        {id: 12,  title: '🏗️ Hala (în desfășurare)', des: ' Ne aflăm în plin proces de construcție a unei hale, care va deveni un centru pentru pregătirea și depozitarea pachetelor umanitare. Credem că această hală va fi o binecuvântare, un loc din care vor pleca multe fapte bune și speranță pentru oameni.', image: 'images/proiecte/Hala.png'},
+        {id: 13,  title: '🔥 Fii și tu căldură în casa cuiva', des: 'Ne propunem să strângem fonduri pentru un camion de lemne, pentru a aduce căldură în casele și inimile persoanelor defavorizate. Prin acest proiect, dorim să fim mâinile prin care Dumnezeu lucrează și aduce lumină acolo unde e frig și întuneric.', image: 'images/proiecte/fii.png'},
     ]
 
     const proiecteContainer = document.getElementById('project-container-all');
@@ -38,12 +38,22 @@ document.addEventListener('DOMContentLoaded', function(){
                             </div>
                             <div class="part2-info">
                                 <div class='inf2-1'><p>${proiect.des}</p></div>
-                                <div class='inf2-2'><button class="vezi-pr">Vezi <span> ↗</span></button></div>
+                                <div class='inf2-2'><button class="vezi-pr" data-target='${proiect.id - 1}'>Vezi <span> ↗</span></button></div>
                             </div>
                         </div>
                     </div>`;
 
         proiecteContainer.innerHTML += pr;
+    })
+
+    const vezi = document.querySelectorAll('.vezi-pr');
+
+    vezi.forEach(btn => {
+        const section = btn.dataset.target;
+        btn.addEventListener('click', function(){
+            console.log(section);
+            window.location.href = `proiecte.html#${section}`;23
+        })
     })
 
     const showMore = document.getElementById('show-btn');
@@ -182,8 +192,13 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 })
 
-// NAVBAR RESPONSIVE
+// Proiecte reidrect
 
+
+
+
+// NAVBAR RESPONSIVE
+/*
 function goTo(id) {
     const offset = document.getElementById(id).getBoundingClientRect().top + window.pageYOffset  - 100; // offset-ul dorit
                  
@@ -252,3 +267,4 @@ contact.forEach(element => {
     });
 });
 
+*/

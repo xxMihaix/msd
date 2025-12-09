@@ -68,7 +68,7 @@
 .proiect-img{
     background-color: black;
     aspect-ratio: 1/0.7;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -101,7 +101,7 @@
 
 @media(max-width: 500px){
     .proiect-img{
-        aspect-ratio: 1/0.5;
+        aspect-ratio: 1/0.6;
     }
 
     .proiect-imgs{
