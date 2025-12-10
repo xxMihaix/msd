@@ -1,4 +1,4 @@
-
+/*
 document.addEventListener('DOMContentLoaded', function(){
 
     const menuIcon = document.getElementById('menu');
@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
     menuIcon.addEventListener('click', function(){
         menuContainer.classList.toggle('active');
     })
-})
+})*/
 
 document.addEventListener('DOMContentLoaded', function(){
     let proiecte = [
@@ -191,80 +191,3 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     }
 })
-
-// Proiecte reidrect
-
-
-
-
-// NAVBAR RESPONSIVE
-/*
-function goTo(id) {
-    const offset = document.getElementById(id).getBoundingClientRect().top + window.pageYOffset  - 100; // offset-ul dorit
-                 
-    window.scrollTo({ top: offset, behavior: 'smooth' 
-    });
-}
-
-const acasa = [
-document.getElementById('pc1'),
-document.getElementById('mob1'),
-]
-
-const despre = [
-document.getElementById('pc2'),
-document.getElementById('mob2'),
-]
-
-const proiecte = [
-document.getElementById('pc3'),
-document.getElementById('mob3'),
-]
-
-const doneaza = [
-document.getElementById('pc4'),
-document.getElementById('mob4'),
-]
-
-const contact = [
-document.getElementById('pc5'),
-document.getElementById('mob5'),
-]
-
-
-// ACASA
-acasa.forEach(element => {
-    element.addEventListener('click', function(){
-        goTo('acasa');
-    });
-});
-
-// DESPRE
-despre.forEach(element => {
-    element.addEventListener('click', function(){
-        goTo('section1');
-    });
-});
-
-// PROIECTE
-proiecte.forEach(element => {
-    element.addEventListener('click', function(){
-        goTo('section2');
-    });
-});
-
-// DONEAZĂ
-doneaza.forEach(element => {
-    element.addEventListener('click', function(){
-        goTo('donation-title');
-    });
-});
-
-// CONTACT
-contact.forEach(element => {
-    element.addEventListener('click', function(){
-        goTo('contact-title');
-    });
-});
-
-*/

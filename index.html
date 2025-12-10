@@ -8,6 +8,7 @@
     <link rel="icon" href="images/logo.jpg">
     <title>Asociatia Mesagerii Dragostei</title>
     <script src="action.js" defer></script>
+    <script src="secnav.js" defer></script>
     <meta name="description" content="Fundația Mesagerii Dragostei oferă ajutor persoanelor nevoiașe prin proiecte umanitare, donații online și sprijin comunitar. Implică-te și tu!">
     <meta name="keywords" content="fundație, donații online, ajutor umanitar, proiecte caritabile, Mesagerii Dragostei">
     <meta property="og:title" content="Asociația Mesagerii Dragostei">
@@ -35,29 +36,29 @@
                 <p>MSD</p>
             </div>
             <ul class="content-li">
-                <li id="pc1"><button>Acasa</button></li>
-                <li id="pc2"><button>Despre Noi</button></li>
-                <li id="pc3"><button>Proiecte</button></li>
-                <li id="pc4"><button>Doneaza❤️</button></li>
-                <li id="pc5"><button>Contact</button></li>
-                <li id="pc6"><div id="menu"><img id="img-menu" src="images/menu.svg"></div></li>
+                <li id="pc1" class="nav-btns" data-target="acasa"><button>Acasa</button></li>
+                <li id="pc2" class="nav-btns" data-target="despre-noi"><button>Despre Noi</button></li>
+                <li id="pc3" class="nav-btns" data-target="proiecte"><button>Proiecte</button></li>
+                <li id="pc4" class="nav-btns" data-target="doneaza"><button>Doneaza❤️</button></li>
+                <li id="pc5" class="nav-btns" data-target="contact"><button>Contact</button></li>
+                <li id="pc6" class="nav-btns"><div id="menu"><img id="img-menu" src="images/menu.svg"></div></li>
             </ul>
         </navbar>
 
         <div class="mobile-menu" id="mobile-menu">
             <div class="header"></div>
             <ul class="mobile-content">
-                <li id="mob1"><button>Acasa</button></li>
-                <li id="mob2"><button>Despre Noi</button></li>
-                <li id="mob3"><button>Proiecte</button></li>
-                <li id="mob4"><button>Doneaza❤️</button></li>
-                <li id="mob5"><button>Contact</button></li>
+                <li id="mob1" class="nav-btns" data-target="acasa"><button>Acasa</button></li>
+                <li id="mob2" class="nav-btns" data-target="despre-noi"><button>Despre Noi</button></li>
+                <li id="mob3" class="nav-btns" data-target="proiecte"><button>Proiecte</button></li>
+                <li id="mob4" class="nav-btns" data-target="doneaza"><button>Doneaza❤️</button></li>
+                <li id="mob5" class="nav-btns" data-target="contact"><button>Contact</button></li>
             </ul>
         </div>
     </header>
 
     <main>
-        <div class="head">
+        <div id="acasa" class="head">
             <div class="background-container">
                 <div class="pos" id="pos1"></div>
                 <div class="pos" id="pos2"></div>
@@ -79,8 +80,35 @@
             </div>
         </div>
 
+        <!-- Ajutor SVG -->
+
+        <div class="ajutor-svg-center">
+            <div class="ajutor-svg-container">
+                <div class="ajutor-svg">
+                    <div class="svg-container"><svg height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#D02D7F;" d="M308.949,24.619c-22.731,0-42.533,13.312-52.946,33.008c-10.414-19.698-30.216-33.008-52.946-33.008 c-39.894,0-66.327,28.978-66.327,64.727c0,35.745,20.152,57.379,66.327,90.002c40.347,28.507,52.946,48.512,52.946,48.512 s12.601-20.005,52.946-48.512c46.175-32.623,66.325-54.256,66.325-90.002C375.274,53.597,348.843,24.619,308.949,24.619z"></path> <path style="fill:#C42C78;" d="M308.949,24.619c-22.731,0-42.533,13.312-52.946,33.008c0,34.278,0,170.231,0,170.231 s12.601-20.005,52.946-48.512c46.175-32.623,66.325-54.256,66.325-90.002C375.274,53.597,348.843,24.619,308.949,24.619z"></path> <path style="fill:#FAD8C5;" d="M456.159,313.963c-10.755,4.752-34.766,15.009-52.639,22.618c1.46,5.327,2.229,10.959,2.229,16.748 c0,15.272-5.369,30.58-14.73,41.997c-11.218,13.683-27.255,21.219-45.158,21.219H240.895v-23.011l0,0H345.86 c44.907,0,51.641-73.785,4.371-73.785c-65.046,0-166.212-21.543-224.965-21.543l0,0l0,0c-31.514,0-125.266,0-125.266,0v148.901 l45.695-16.544c0,0,151.255,56.819,229.26,56.819s166.569-55.718,220.606-109.755C527.864,345.324,511.438,289.539,456.159,313.963z "></path> </g></svg></div>
+                    <p class="number">1000+</p>
+                    <p class="ajutor-des">Case construite</p>
+                </div>
+                <div class="ajutor-svg">
+                    <div class="svg-container"><svg height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#D02D7F;" d="M308.949,24.619c-22.731,0-42.533,13.312-52.946,33.008c-10.414-19.698-30.216-33.008-52.946-33.008 c-39.894,0-66.327,28.978-66.327,64.727c0,35.745,20.152,57.379,66.327,90.002c40.347,28.507,52.946,48.512,52.946,48.512 s12.601-20.005,52.946-48.512c46.175-32.623,66.325-54.256,66.325-90.002C375.274,53.597,348.843,24.619,308.949,24.619z"></path> <path style="fill:#C42C78;" d="M308.949,24.619c-22.731,0-42.533,13.312-52.946,33.008c0,34.278,0,170.231,0,170.231 s12.601-20.005,52.946-48.512c46.175-32.623,66.325-54.256,66.325-90.002C375.274,53.597,348.843,24.619,308.949,24.619z"></path> <path style="fill:#FAD8C5;" d="M456.159,313.963c-10.755,4.752-34.766,15.009-52.639,22.618c1.46,5.327,2.229,10.959,2.229,16.748 c0,15.272-5.369,30.58-14.73,41.997c-11.218,13.683-27.255,21.219-45.158,21.219H240.895v-23.011l0,0H345.86 c44.907,0,51.641-73.785,4.371-73.785c-65.046,0-166.212-21.543-224.965-21.543l0,0l0,0c-31.514,0-125.266,0-125.266,0v148.901 l45.695-16.544c0,0,151.255,56.819,229.26,56.819s166.569-55.718,220.606-109.755C527.864,345.324,511.438,289.539,456.159,313.963z "></path> </g></svg></div>
+                    <p class="number">1000+</p>
+                    <p class="ajutor-des">Case construite</p>
+                </div>
+                <div class="ajutor-svg">
+                    <div class="svg-container"><svg height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#D02D7F;" d="M308.949,24.619c-22.731,0-42.533,13.312-52.946,33.008c-10.414-19.698-30.216-33.008-52.946-33.008 c-39.894,0-66.327,28.978-66.327,64.727c0,35.745,20.152,57.379,66.327,90.002c40.347,28.507,52.946,48.512,52.946,48.512 s12.601-20.005,52.946-48.512c46.175-32.623,66.325-54.256,66.325-90.002C375.274,53.597,348.843,24.619,308.949,24.619z"></path> <path style="fill:#C42C78;" d="M308.949,24.619c-22.731,0-42.533,13.312-52.946,33.008c0,34.278,0,170.231,0,170.231 s12.601-20.005,52.946-48.512c46.175-32.623,66.325-54.256,66.325-90.002C375.274,53.597,348.843,24.619,308.949,24.619z"></path> <path style="fill:#FAD8C5;" d="M456.159,313.963c-10.755,4.752-34.766,15.009-52.639,22.618c1.46,5.327,2.229,10.959,2.229,16.748 c0,15.272-5.369,30.58-14.73,41.997c-11.218,13.683-27.255,21.219-45.158,21.219H240.895v-23.011l0,0H345.86 c44.907,0,51.641-73.785,4.371-73.785c-65.046,0-166.212-21.543-224.965-21.543l0,0l0,0c-31.514,0-125.266,0-125.266,0v148.901 l45.695-16.544c0,0,151.255,56.819,229.26,56.819s166.569-55.718,220.606-109.755C527.864,345.324,511.438,289.539,456.159,313.963z "></path> </g></svg></div>
+                    <p class="number">1000+</p>
+                    <p class="ajutor-des">Case construite</p>
+                </div>
+                <div class="ajutor-svg">
+                    <div class="svg-container"><svg height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#D02D7F;" d="M308.949,24.619c-22.731,0-42.533,13.312-52.946,33.008c-10.414-19.698-30.216-33.008-52.946-33.008 c-39.894,0-66.327,28.978-66.327,64.727c0,35.745,20.152,57.379,66.327,90.002c40.347,28.507,52.946,48.512,52.946,48.512 s12.601-20.005,52.946-48.512c46.175-32.623,66.325-54.256,66.325-90.002C375.274,53.597,348.843,24.619,308.949,24.619z"></path> <path style="fill:#C42C78;" d="M308.949,24.619c-22.731,0-42.533,13.312-52.946,33.008c0,34.278,0,170.231,0,170.231 s12.601-20.005,52.946-48.512c46.175-32.623,66.325-54.256,66.325-90.002C375.274,53.597,348.843,24.619,308.949,24.619z"></path> <path style="fill:#FAD8C5;" d="M456.159,313.963c-10.755,4.752-34.766,15.009-52.639,22.618c1.46,5.327,2.229,10.959,2.229,16.748 c0,15.272-5.369,30.58-14.73,41.997c-11.218,13.683-27.255,21.219-45.158,21.219H240.895v-23.011l0,0H345.86 c44.907,0,51.641-73.785,4.371-73.785c-65.046,0-166.212-21.543-224.965-21.543l0,0l0,0c-31.514,0-125.266,0-125.266,0v148.901 l45.695-16.544c0,0,151.255,56.819,229.26,56.819s166.569-55.718,220.606-109.755C527.864,345.324,511.438,289.539,456.159,313.963z "></path> </g></svg></div>
+                    <p class="number">1000+</p>
+                    <p class="ajutor-des">Case construite</p>
+                </div>
+            </div>
+        </div>
+
         <!-- DESPRE NOI -->
-        <p class="title">Despre Noi</p>
+        <p class="title" id="despre-noi">Despre Noi</p>
         <div class="center-all" id="center-all1">
             <div class="section" id="section1">
                 <div class="content">
@@ -133,7 +161,7 @@
         </div>
 
         <!-- PROIECTE -->
-        <p class="title" id="title2">Proiecte</p>
+        <p class="title title2" id="proiecte">Proiecte</p>
         <div class="center-all" id="center-all2">
             <div class="section" id="section2">
                 <div class="content project-container-all" id="project-container-all">
@@ -146,7 +174,7 @@
         </div>
         
         <!--  DONATII  -->
-        <p class="title" id="donation-title">Donatii❤️</p>
+        <p class="title donation-title" id="doneaza">Donatii❤️</p>
         <div class="center-all" id="center-all">
             <div class="section" id="dono-section">
                 <div class="img-dono1">
@@ -192,7 +220,7 @@
         </div>
 
         <!-- CONTACT -->
-        <p class="title" id="contact-title">Contacteaza-ne</p>
+        <p class="title" id="contact">Contacteaza-ne</p>
         <div class="center-all" id="center-all3">
             <div class="section" id="section3">
                 <div class="content">
@@ -240,7 +268,7 @@
                             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                     
                             <!-- Custom Confirmation / Success Page -->
-                            <input type="hidden" name="redirect" value="https://asociatiamsd.ro/succes.html">
+                            <input type="hidden" name="redirect" value="https://asociatiamsd.ro/send.html">
                     
                             <div class="align-submit">
                                 <button class="submit" type="submit">Submit Form</button>

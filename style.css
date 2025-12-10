@@ -218,6 +218,8 @@ html, body{
     }
 }
 
+
+
 @media(max-width: 630px){
     #pos4{
         display: none;
@@ -468,7 +470,73 @@ html, body{
     animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
 
-/************** Main *************/
+/************** Ajutor SVG *************/
+
+.ajutor-svg-center{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ajutor-svg-container{
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3%;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+@media(max-width: 700px){
+    .ajutor-svg-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 25px;
+    }
+}
+
+@media(max-width: 370px){
+    .ajutor-svg-container{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 25px;
+    }
+}
+
+.ajutor-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.svg-container{
+    overflow: hidden;
+    border-radius: 25px;
+    width: 150px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.svg-container svg{
+    width: 100%;
+    height: 100%;
+}
+
+.ajutor-des{
+    text-align: center;
+}
+
+
+
+/************** Despre Noi *************/
 
 
 .center-all{
@@ -497,7 +565,7 @@ html, body{
     text-align: center;
 }
 
-#title2{
+.title2{
     padding: 0px;
 }
 
@@ -814,7 +882,7 @@ html, body{
 
 /*************** Donatii *****************/
 
-#donation-title{
+.donation-title{
     margin-top: 10px;
 }
 

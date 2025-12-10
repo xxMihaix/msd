@@ -10,12 +10,23 @@
     <link rel="icon" href="images/logo.jpg">
     <title>Asociatia Mesagerii Dragostei</title>
     <script type="module" src="proiecte.js" defer></script>
+    <script src="secnav.js" defer></script>
     <meta name="description" content="Fundația Mesagerii Dragostei oferă ajutor persoanelor nevoiașe prin proiecte umanitare, donații online și sprijin comunitar. Implică-te și tu!">
     <meta name="keywords" content="fundație, donații online, ajutor umanitar, proiecte caritabile, Mesagerii Dragostei">
     <meta property="og:title" content="Asociația Mesagerii Dragostei">
     <meta property="og:description" content="Implică-te alături de noi în proiectele umanitare.">
     <meta property="og:image" content="https://mesageriidragostei.ro/img/preview.jpg">
 </head>
+
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GB1PTT8YG7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GB1PTT8YG7');
+    </script>
 
 <body>
     <header>
@@ -27,60 +38,30 @@
                 <p>MSD</p>
             </div>
             <ul class="content-li">
-                <li id="pc1"><button>Acasa</button></li>
-                <li id="pc2"><button>Despre Noi</button></li>
-                <li id="pc3"><button>Proiecte</button></li>
-                <li id="pc4"><button>Doneaza❤️</button></li>
-                <li id="pc5"><button>Contact</button></li>
-                <li id="pc6"><div id="menu"><img id="img-menu" src="images/menu.svg"></div></li>
+                <li id="pc1" class="nav-btns" data-target="acasa"><button>Acasa</button></li>
+                <li id="pc2" class="nav-btns" data-target="despre-noi"><button>Despre Noi</button></li>
+                <li id="pc3" class="nav-btns" data-target="proiecte"><button>Proiecte</button></li>
+                <li id="pc4" class="nav-btns" data-target="doneaza"><button>Doneaza❤️</button></li>
+                <li id="pc5" class="nav-btns" data-target="contact"><button>Contact</button></li>
+                <li id="pc6" class="nav-btns"><div id="menu"><img id="img-menu" src="images/menu.svg"></div></li>
             </ul>
         </navbar>
 
         <div class="mobile-menu" id="mobile-menu">
             <div class="header"></div>
             <ul class="mobile-content">
-                <li id="mob1"><button>Acasa</button></li>
-                <li id="mob2"><button>Despre Noi</button></li>
-                <li id="mob3"><button>Proiecte</button></li>
-                <li id="mob4"><button>Doneaza❤️</button></li>
-                <li id="mob5"><button>Contact</button></li>
+                <li id="mob1" class="nav-btns" data-target="acasa"><button>Acasa</button></li>
+                <li id="mob2" class="nav-btns" data-target="despre-noi"><button>Despre Noi</button></li>
+                <li id="mob3" class="nav-btns" data-target="proiecte"><button>Proiecte</button></li>
+                <li id="mob4" class="nav-btns" data-target="doneaza"><button>Doneaza❤️</button></li>
+                <li id="mob5" class="nav-btns" data-target="contact"><button>Contact</button></li>
             </ul>
         </div>
     </header>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GB1PTT8YG7"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-GB1PTT8YG7');
-    </script>
     
     <main>
         <div id="all-center" class="all-center">
-            <div id="proiect-container" class="proiect-container">
-                <p class="proiect-title">Primul Proiect</p>
-                <p class="proiect-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, esse dignissimos quaerat vero dolorum deserunt quae accusamus aliquam saepe cumque cupiditate ut a iure. Ratione, nisi perferendis? Odit, unde dolor! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur perspiciatis reprehenderit nemo modi quisquam aspernatur rem quae inventore magnam suscipit officia consequuntur nobis illo molestiae, velit laborum exercitationem necessitatibus nesciunt.
-                </p>
-                <div class="proiect-imgs">
-                    <!--div-->
-                    <div class="proiect-img">
-                        <img src="images/logo.jpg">
-                    </div>
-                    <!--div-->
-                    <div class="proiect-img"><img src="images/logo.jpg"></div>
-                    <!--div-->
-                    <div class="proiect-img"><img src="images/logo.jpg"></div>
-                    <!--div-->
-                    <div class="proiect-img"><img src="images/logo.jpg"></div>
-                    <!--div-->
-                    <div class="proiect-img"><img src="images/logo.jpg"></div>
-                    <!--div-->
-                    <div class="proiect-img"><img src="images/logo.jpg"></div>
-                </div>
-            </div>
+            <!-- Content -->
         </div>
     </main>
 
